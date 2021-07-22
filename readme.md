@@ -27,7 +27,7 @@ $ crc -n <component-name>
 Will make 3 files.
 
 ```bash
-$ crc -n example
+$ crc -n example // The first character is automatically converted to uppercase.
 
 CREATE src/Example/ExamplePresenter.js
 CREATE src/Example/ExampleContainer.js

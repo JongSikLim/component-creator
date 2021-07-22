@@ -1,6 +1,6 @@
 {
     "name": "react-cnp-component-creator",
-    "version": "0.1.2",
+    "version": "0.1.4",
     "description": "Generates react components based on the Container&Presenter pattern.",
     "repository": {
         "type": "git",
