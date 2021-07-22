@@ -17,7 +17,8 @@
         "crc": "bin/app.js"
     },
     "files": [
-        "app"
+        "app",
+        "GenerateModule"
     ],
     "author": "seekbell",
     "license": "MIT",
