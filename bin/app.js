@@ -2,7 +2,6 @@
 
 const { program } = require("commander");
 const fs = require("fs");
-const path = require("path");
 
 program
     .requiredOption(`-n, --name <name>`, `component name`)
