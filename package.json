@@ -1,9 +1,17 @@
 {
     "name": "react-cnp-component-creator",
     "version": "0.1.0",
-    "description": "Help to create react component",
+    "description": "Generates react components based on the Container&Presenter pattern.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JongSikLim/component-creator.git"
+    },
     "keywords": [
-        "react"
+        "react",
+        "Container Presenter",
+        "component",
+        "generator",
+        "useful"
     ],
     "bin": {
         "crc": "bin/app.js"
