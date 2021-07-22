@@ -14,7 +14,7 @@
         "useful"
     ],
     "bin": {
-        "crc": "bin/app.js"
+        "lcrc": "bin/app.js"
     },
     "files": [
         "app"
