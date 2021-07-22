@@ -24,6 +24,50 @@ Can skip directory-name (default directory : src/)
 $ crc -n <component-name>
 ```
 
+Will make 3 files.
+
+```bash
+$ crc -n example
+
+CREATE src/Example/ExamplePresenter.js
+CREATE src/Example/ExampleContainer.js
+CREATE src/Example/index.js
+```
+
+## File Content
+
+index.js
+
+```js
+import ExampleContainer from "./ExampleContainer.js";
+export default ExampleContainer;
+```
+
+ExampleContainer.js
+
+```js
+import react from "react";
+import ExamplePresenter from "./ExamplePresenter";
+
+const ExampleContainer = () => {
+    return <ExamplePresenter />;
+};
+
+export default ExampleContainer;
+```
+
+ExamplePresenter.js
+
+```js
+import react from "react";
+
+const ExamplePresenter = () => {
+    return <></>;
+};
+
+export default ExamplePresenter;
+```
+
 ## Check list
 
 Can't overide existing folder & file. <br>
