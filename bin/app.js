@@ -5,9 +5,13 @@ const GenerateModule = require("./GenerateModule");
 const generateModule = new GenerateModule();
 
 program
-    .requiredOption(`-n, --name <name>`, `component name`)
-    .option(`-d --directory <directory>`, `directory`, "src")
-    .option(`-c --classType`, `Whether to make by class component`)
+    .requiredOption(`-n, --name <name>`, `Name of component will create`)
+    .option(
+        `-d --directory <directory>`,
+        `Path of component will create (default: src)`,
+        "src"
+    )
+    .option(`-c --classType`, `Create a component a class component`)
     .parse();
 
 const { name, directory, classType } = program.opts();

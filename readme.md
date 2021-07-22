@@ -2,15 +2,16 @@
 
 [![npm version](https://badge.fury.io/js/react-cnp-component-creator.svg)](https://badge.fury.io/js/react-cnp-component-creator)
 
-Generates react components based on the Container&Presenter pattern.
+Generates react components based on the Container&Presenter pattern. <br>
+Support Both class and functional components!
 
-## Installation
+## 💡Installation
 
 ```bash
 $ npm install -g react-cnp-component-creator
 ```
 
-## Usage
+## 📖Usage
 
 Generate component to the directory where you want.
 
@@ -34,16 +35,32 @@ CREATE src/Example/ExampleContainer.js
 CREATE src/Example/index.js
 ```
 
-## File Content
+Can make class component
 
-index.js
+```bash
+$ crc -n <component-name> -c
+```
+
+## ⚙️Options
+
+| name      | alias | description                                  |
+| --------- | ----- | -------------------------------------------- |
+| name      | n     | Name of component will create                |
+| directory | d     | Path of component will create (default: src) |
+| classType | c     | Create a component a class component         |
+
+<br>
+
+## 📑File Content
+
+##### index.js
 
 ```js
 import ExampleContainer from "./ExampleContainer.js";
 export default ExampleContainer;
 ```
 
-ExampleContainer.js
+##### ExampleContainer.js
 
 ```js
 import react from "react";
@@ -56,7 +73,7 @@ const ExampleContainer = () => {
 export default ExampleContainer;
 ```
 
-ExamplePresenter.js
+##### ExamplePresenter.js
 
 ```js
 import react from "react";
@@ -68,6 +85,41 @@ const ExamplePresenter = () => {
 export default ExamplePresenter;
 ```
 
-## Check list
+### class component
+
+##### ExampleContainer.js
+
+```js
+import React, { PureComponent } from "react";
+import ExamplePresenter from "./ExamplePresenter";
+
+class ExampleContainer extends PureComponent {
+    state = {};
+    render() {
+        const {} = this.props;
+        const {} = this.state;
+        return <ExamplePresenter {...this.props} />;
+    }
+}
+
+export default ExampleContainer;
+```
+
+##### ExamplePresenter.js
+
+```js
+import React, { PureComponent } from "react";
+
+class ExamplePresenter extends PureComponent {
+    render() {
+        const {} = this.props;
+        return <>Example Component!</>;
+    }
+}
+
+export default ExamplePresenter;
+```
+
+## 😵Check list
 
 Can't overide existing folder & file. <br>
