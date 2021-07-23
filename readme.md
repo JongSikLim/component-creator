@@ -4,6 +4,7 @@
 
 Generates react components based on the Container&Presenter pattern. <br>
 Support Both class and functional components!
+[한국어 가이드 문서](https://js021.notion.site/react-cnp-component-creator-78164503819f43b1837978b6ca4027b3)
 
 ## 💡Installation
 
