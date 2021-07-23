@@ -87,8 +87,8 @@ export default ${name}Presenter;
     };
     createIndex = (dirPath, name) => {
         const indexFilePath = `${dirPath}/index.js`;
-        const content = `import ${name}Container from './${name}Container.js'
-export default ${name}Container;`;
+        const content = `import ${name} from './${name}Container.js'
+export default ${name};`;
 
         this.createFile(indexFilePath, content);
         return;
