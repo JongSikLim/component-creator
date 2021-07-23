@@ -7,8 +7,16 @@ Support Both class and functional components!
 
 ## 💡Installation
 
+#### npm
+
 ```bash
 $ npm install -g react-cnp-component-creator
+```
+
+#### yarn
+
+```bash
+$ yarn global add react-cnp-component-creator
 ```
 
 ## 📖Usage
